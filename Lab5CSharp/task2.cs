@@ -55,7 +55,7 @@ namespace lab_5.task2
     {
         public static void Run()
         {
-            Console.WriteLine("--- ДЕМОНСТРАЦІЯ РОБОТИ КОНСТРУКТОРІВ ---\n");
+            Console.WriteLine(" ДЕМОНСТРАЦІЯ РОБОТИ КОНСТРУКТОРІВ \n");
             
             // Збільшуємо масив, щоб вмістити всі 9 варіантів (3 класи * 3 конструктори)
             Document[] docs = new Document[9];
@@ -75,10 +75,10 @@ namespace lab_5.task2
             docs[7] = new Bill("B-002", 15000.00);
             docs[8] = new Bill("B-003", new DateTime(2023, 10, 17), "Іванов І.І.", 850.00);
 
-            Console.WriteLine("--- ВИВІД ДАНИХ ---");
+            Console.WriteLine(" ВИВІД ДАНИХ ");
             foreach (Document doc in docs) doc.Show();
 
-            Console.WriteLine("\n--- ЗНИЩЕННЯ ОБ'ЄКТІВ ---");
+            Console.WriteLine("\n ЗНИЩЕННЯ ОБ'ЄКТІВ ");
             Array.Clear(docs, 0, docs.Length);
             docs = null;
             
